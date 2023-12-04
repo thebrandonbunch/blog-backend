@@ -11,8 +11,6 @@ public class CommentsServiceImpl {
     @Autowired
     private CommentsRepository commentsRepository;
 
-    @Autowired
-    private MongoTemplate mongoTemplate;
     public Comments createComment(Comments comments) {
 
         return commentsRepository.insert(comments);
